@@ -10,15 +10,15 @@ pipeline {
            }
        }
        
-      stage ( 'test' ) {
+       stage ( 'test' ) {
 
-         step {
+         steps {
             echo (' this a test stage')
             sh 'sleep 3'
 
          }   
 
-      } 
+       } 
        stage ( 'this is deploy stage') {
           steps {
 
