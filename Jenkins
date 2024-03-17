@@ -10,7 +10,7 @@ pipeline {
            }
        }
        
-       stage ( 'test') {
+      stage ( 'test' ) {
 
          step {
             echo (' this a test stage')
@@ -18,16 +18,18 @@ pipeline {
 
          }   
 
-       } 
+      } 
        stage ( 'this is deploy stage') {
           steps {
 
              echo ( 'this is deploying stage')
-            sh ( 'sleep 3')
-                ('exit 0')
+            sh ( ''')
+             sleep 3
+             exit 0
+             ( ''')                
 
           }      
 
-       }  
+        }  
     }
 }
